@@ -125,6 +125,14 @@ $messages['nl'] = array(
 	'spark-missing-query' => 'U moet een zoekopdracht opgeven met de parameter "data-spark-query".',
 );
 
+/** Polish (Polski)
+ * @author BeginaFelicysym
+ */
+$messages['pl'] = array(
+	'spark-desc' => 'Dodaje znacznik <code><nowiki><spark></spark></nowiki></code>, który umożliwia osadzanie aplikacjikompozytowych [http://km.aifb.kit.edu/sites/spark/ Spark]. Autorami biblioteki spark są Denny Vrandecic i Andreas Harth.',
+	'spark-missing-query' => 'Musisz określić kwerendę przy użyciu parametru "data-spark-query".',
+);
+
 /** Piedmontese (Piemontèis)
  * @author Borichèt
  * @author Dragonòt
