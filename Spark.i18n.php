@@ -107,7 +107,7 @@ $messages['it'] = array(
  */
 $messages['ja'] = array(
 	'spark-desc' => '[http://km.aifb.kit.edu/sites/spark/ Spark] マッシュアップを埋め込めるようにする <code><nowiki><spark /></nowiki></code> タグを追加する。Spark ライブラリの作者は Denny Vrandecic と Andreas Harth',
-	'spark-missing-query' => '「data-spark-query」パラメーターを用いてクエリを指定する必要があります。',
+	'spark-missing-query' => '「data-spark-query」パラメーターを使用してクエリーを指定する必要があります。',
 );
 
 /** Colognian (Ripoarisch)
