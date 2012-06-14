@@ -45,7 +45,7 @@ $messages['dsb'] = array(
 	'spark-missing-query' => 'Musyš napšašowanje z pomocu parametra "data-spark-query" pódaś.',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Fitoschido
  */
 $messages['es'] = array(
@@ -53,7 +53,7 @@ $messages['es'] = array(
 	'spark-missing-query' => 'Es necesario especificar una consulta con el parámetro «data-spark-query».',
 );
 
-/** French (Français)
+/** French (français)
  * @author Sherbrooke
  */
 $messages['fr'] = array(
@@ -85,7 +85,7 @@ $messages['hsb'] = array(
 	'spark-missing-query' => 'Dyrbiš naprašowanje z pomocu parametra "data-spark-query" podać.',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -118,7 +118,7 @@ $messages['ksh'] = array(
 	'spark-missing-query' => 'Mer moß och en Frooch övver dä Parrameeter <code lang="en">data-spark-query</code> aanjävve.',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -134,7 +134,7 @@ $messages['nl'] = array(
 	'spark-missing-query' => 'U moet een zoekopdracht opgeven met de parameter "data-spark-query".',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  */
 $messages['pl'] = array(
@@ -151,7 +151,7 @@ $messages['pms'] = array(
 	'spark-missing-query' => "A dev spessifiché n'arcesta an dovrand ël paràmetr «data-spark-query».",
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  */
 $messages['pt'] = array(
@@ -159,7 +159,7 @@ $messages['pt'] = array(
 	'spark-missing-query' => 'Tem de especificar uma consulta usando o parâmetro "data-spark-query".',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
