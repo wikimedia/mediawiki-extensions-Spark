@@ -37,7 +37,7 @@ $messages['de'] = array(
 	'spark-missing-query' => 'Es muss eine eine Abfrage mit dem Parameter „data-spark-query“ erstellt werden.',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -61,7 +61,7 @@ $messages['fr'] = array(
 	'spark-missing-query' => 'Vous devez spécifier une requête en utilisant le paramètre <code>data-spark-query</code>.',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -77,7 +77,7 @@ $messages['he'] = array(
 	'spark-missing-query' => 'יש להזין שאילתה באמצעות הפרמטר "data-spark-query".',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
