@@ -167,3 +167,11 @@ $messages['ru'] = array(
 	'spark-missing-query' => 'Необходимо задать запрос с использованием параметра «data-spark-query».',
 );
 
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'spark-desc' => 'Nagdaragdag ng isang tatak na <code><nowiki><spark /></nowiki></code> na nagpapagana ng pagbabaon ng mga nilamas na masa ng [http://km.aifb.kit.edu/sites/spark/ Spark]. Ang aklatan ng Spark ay nilikha nina Denny Vrandecic at Andreas Harth.',
+	'spark-missing-query' => 'Kailangann mong tumukoy ng isang pagtatanong na ginagamit ang parametrong "data-spark-query".',
+);
+
