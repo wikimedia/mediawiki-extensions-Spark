@@ -118,6 +118,14 @@ $messages['ja'] = array(
 	'spark-missing-query' => '「data-spark-query」パラメーターを使用してクエリーを指定する必要があります。',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'spark-desc' => '[http://km.aifb.kit.edu/sites/spark/ Spark] 매시업을 포함하도록 허용하는 <code><nowiki><spark /></nowiki></code> 태그를 추가합니다. Spark 라이브러리는 Denny Vrandecic과 Andreas Harth에 의해 만들어졌습니다.',
+	'spark-missing-query' => '"data-spark-query" 변수를 사용해서 쿼리를 지정해야 합니다.',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
