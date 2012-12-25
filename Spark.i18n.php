@@ -190,3 +190,11 @@ $messages['tl'] = array(
 	'spark-desc' => 'Nagdaragdag ng isang tatak na <code><nowiki><spark /></nowiki></code> na nagpapagana ng pagbabaon ng mga nilamas na masa ng [http://km.aifb.kit.edu/sites/spark/ Spark]. Ang aklatan ng Spark ay nilikha nina Denny Vrandecic at Andreas Harth.',
 	'spark-missing-query' => 'Kailangann mong tumukoy ng isang pagtatanong na ginagamit ang parametrong "data-spark-query".',
 );
+
+/** Ukrainian (українська)
+ * @author Ата
+ */
+$messages['uk'] = array(
+	'spark-desc' => 'Додає тег <code><nowiki><spark /></nowiki></code>, який дає можливість вбудовування меш-апів [http://km.aifb.kit.edu/sites/spark/ Spark]. Бібліотеку Spark створили Денні Врандечич (Denny Vrandecic) і Андреас Харт (Andreas Harth).',
+	'spark-missing-query' => 'Вам необхідно вказати в запиті параметр "data-spark-query".',
+);
