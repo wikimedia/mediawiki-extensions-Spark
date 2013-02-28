@@ -24,9 +24,10 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Jeroen De Dauw
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'spark-desc' => '{{desc}}',
+	'spark-desc' => '{{desc|name=Spark|url=http://www.mediawiki.org/wiki/Extension:Spark}}',
 );
 
 /** Asturian (asturianu)
