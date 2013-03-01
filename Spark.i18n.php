@@ -176,6 +176,14 @@ $messages['pt'] = array(
 	'spark-missing-query' => 'Tem de especificar uma consulta usando o parâmetro "data-spark-query".',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'spark-desc' => "Aggiunge 'nu tag <code><nowiki><spark /></nowiki></code> ca abbilite 'u 'ngapsulamende d'u prise [http://km.aifb.kit.edu/sites/spark/ Spark]. 'A libbrerie spark ha state ccrejate da Denny Vrandecic e Andreas Harth.",
+	'spark-missing-query' => "Tu è abbesògne de specificà 'n'inderrogazione ausanne 'u parametre \"data-spark-query\".",
+);
+
 /** Russian (русский)
  * @author Александр Сигачёв
  */
