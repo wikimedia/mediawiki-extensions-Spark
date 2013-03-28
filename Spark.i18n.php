@@ -28,6 +28,7 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'spark-desc' => '{{desc|name=Spark|url=http://www.mediawiki.org/wiki/Extension:Spark}}',
+	'spark-missing-query' => 'Used when a query is not specified.',
 );
 
 /** Asturian (asturianu)
