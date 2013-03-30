@@ -208,3 +208,11 @@ $messages['uk'] = array(
 	'spark-desc' => 'Додає тег <code><nowiki><spark /></nowiki></code>, який дає можливість вбудовування меш-апів [http://km.aifb.kit.edu/sites/spark/ Spark]. Бібліотеку Spark створили Денні Врандечич (Denny Vrandecic) і Андреас Харт (Andreas Harth).',
 	'spark-missing-query' => 'Вам необхідно вказати в запиті параметр "data-spark-query".',
 );
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Yfdyh000
+ */
+$messages['zh-hans'] = array(
+	'spark-desc' => '添加<code><nowiki><spark /></nowiki></code>标签，它将嵌入[http://km.aifb.kit.edu/sites/spark/ Spark] mash-ups。spark库由Denny Vrandecic和Andreas Harth制作。',
+	'spark-missing-query' => '您需要使用“data-spark-query”参数指定查询。',
+);
