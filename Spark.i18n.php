@@ -22,7 +22,10 @@ $messages['en'] = array(
 	'spark-missing-query' => 'You need to specify a query using the "data-spark-query" parameter.',
 );
 
-/** Message documentation (Message documentation)
+/** Message documentation (This is the name of the message documentation language code (qqq). Follow the rules of your languages and use small first letter if it doesn't capitalize language names always.
+
+It might be easier to translate it as "translation guidelines" or "translation help".
+{{Identical|Message documentation}})
  * @author Jeroen De Dauw
  * @author Shirayuki
  */
