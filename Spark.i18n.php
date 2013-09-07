@@ -177,6 +177,13 @@ $messages['pt'] = array(
 	'spark-missing-query' => 'Tem de especificar uma consulta usando o parâmetro "data-spark-query".',
 );
 
+/** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
+ */
+$messages['pt-br'] = array(
+	'spark-missing-query' => 'Você deve especificar uma consulta utilizando o parâmetro "data-spark-query".',
+);
+
 /** tarandíne (tarandíne)
  * @author Joetaras
  */
