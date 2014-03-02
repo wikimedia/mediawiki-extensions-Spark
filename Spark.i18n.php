@@ -63,6 +63,14 @@ $messages['es'] = array(
 	'spark-missing-query' => 'Es necesario especificar una consulta con el parámetro «data-spark-query».',
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'spark-desc' => 'افزودن برچسب <code><nowiki><spark /></nowiki></code> که  جاسازی درهم برهم [http://km.aifb.kit.edu/sites/spark/ Spark] را فعال می‌کند. کتابخانه جرقه توسط دنی ورندسیک و آندراس هارت ایجتد شده بود.',
+	'spark-missing-query' => 'شما نیاز به تعیین یک سوال با استفاده از پارامتر "داده-جرقه-سوال" دارید.',
+);
+
 /** French (français)
  * @author Sherbrooke
  */
