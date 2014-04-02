@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "BeginaFelicysym"
+        ]
+    },
+    "spark-desc": "Dodaje znacznik <code><nowiki><spark></spark></nowiki></code>, który umożliwia osadzanie aplikacjikompozytowych [http://km.aifb.kit.edu/sites/spark/ Spark]. Autorami biblioteki spark są Denny Vrandecic i Andreas Harth.",
+    "spark-missing-query": "Musisz określić kwerendę przy użyciu parametru \"data-spark-query\"."
+}

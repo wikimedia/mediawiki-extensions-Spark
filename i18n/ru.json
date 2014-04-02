@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Александр Сигачёв"
+        ]
+    },
+    "spark-desc": "Добавляет тег <nowiki><spark /></nowiki>, позволяющий встраивать мэшап [http://km.aifb.kit.edu/sites/spark/ Spark]. Библиотека Spark была создана Денни Врандечич (Denny Vrandecic) и Андреасом Хартом (Andreas Harth).",
+    "spark-missing-query": "Необходимо задать запрос с использованием параметра «data-spark-query»."
+}

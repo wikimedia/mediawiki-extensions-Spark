@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Initialization file for the Spark extension.
  *
@@ -29,7 +28,7 @@ if ( version_compare( $wgVersion, '1.15', '<' ) ) {
 	die( '<b>Error:</b> Spark requires MediaWiki 1.15 or above.' );
 }
 
-define( 'Spark_VERSION', '0.2 alpha' );
+define( 'Spark_VERSION', '0.3.0 alpha' );
 
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
@@ -45,6 +44,7 @@ $wgExtensionCredits['other'][] = array(
 // $wgExtensionAssetsPath does possibly not exist.
 $egSparkScriptPath = ( (!isset($wgExtensionAssetsPath) || $wgExtensionAssetsPath === false) ? $wgScriptPath . '/extensions' : $wgExtensionAssetsPath ) . '/Spark';
 
+$wgMessagesDirs['Spark'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['Spark'] = dirname( __FILE__ ) . '/Spark.i18n.php';
 
 $wgAutoloadClasses['SparkHooks'] = dirname( __FILE__ ) . '/Spark.hooks.php';

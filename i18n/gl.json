@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Toliño"
+        ]
+    },
+    "spark-desc": "Engade unha etiqueta <code><nowiki><spark /></nowiki></code> que permite a incorporación de mash-ups de [http://km.aifb.kit.edu/sites/spark/ Spark]. A biblioteca spark foi creada por Denny Vrandecic e Andreas Harth.",
+    "spark-missing-query": "Cómpre especificar unha pescuda a través do parámetro \"data-spark-query\"."
+}
