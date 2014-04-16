@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bjankuloski06"
-        ]
-    },
-    "spark-desc": "Ја додава ознаката <code><nowiki><spark /></nowiki></code> што овозможува вградување на мешовити содржини од разни извори (mash-ups) од [http://km.aifb.kit.edu/sites/spark/ Spark]. Библиотеката на Spark е дело на Дени Врандечиќ и Андреас Харт.",
-    "spark-missing-query": "Ќе треба да наведете барање користејќи го параметарот „data-spark-query“."
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"spark-desc": "Ја додава ознаката <code><nowiki><spark /></nowiki></code> што овозможува вградување на мешовити содржини од разни извори (mash-ups) од [http://km.aifb.kit.edu/sites/spark/ Spark]. Библиотеката на Spark е дело на Дени Врандечиќ и Андреас Харт.",
+	"spark-missing-query": "Ќе треба да наведете барање користејќи го параметарот „data-spark-query“."
 }

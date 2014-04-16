@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "McDutchie"
-        ]
-    },
-    "spark-desc": "Adde un etiquetta <code><nowiki><spark /></nowiki></code> que permitte incorporar \"mash-ups\" (mixturas de datos syndicate) de [http://km.aifb.kit.edu/sites/spark/ Spark]. Le bibliotheca \"spark\" esseva create per Denny Vrandecic and Andreas Harth.",
-    "spark-missing-query": "Es necessari specificar un consulta usante le parametro \"data-spark-query\"."
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"spark-desc": "Adde un etiquetta <code><nowiki><spark /></nowiki></code> que permitte incorporar \"mash-ups\" (mixturas de datos syndicate) de [http://km.aifb.kit.edu/sites/spark/ Spark]. Le bibliotheca \"spark\" esseva create per Denny Vrandecic and Andreas Harth.",
+	"spark-missing-query": "Es necessari specificar un consulta usante le parametro \"data-spark-query\"."
 }

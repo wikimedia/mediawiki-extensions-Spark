@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Schu",
-            "Shirayuki"
-        ]
-    },
-    "spark-desc": "[http://km.aifb.kit.edu/sites/spark/ Spark] マッシュアップを埋め込めるようにする <code><nowiki><spark /></nowiki></code> タグを追加する。Spark ライブラリの作者は Denny Vrandecic と Andreas Harth",
-    "spark-missing-query": "「data-spark-query」パラメーターを使用してクエリを指定する必要があります。"
+	"@metadata": {
+		"authors": [
+			"Schu",
+			"Shirayuki"
+		]
+	},
+	"spark-desc": "[http://km.aifb.kit.edu/sites/spark/ Spark] マッシュアップを埋め込めるようにする <code><nowiki><spark /></nowiki></code> タグを追加する。Spark ライブラリの作者は Denny Vrandecic と Andreas Harth",
+	"spark-missing-query": "「data-spark-query」パラメーターを使用してクエリを指定する必要があります。"
 }

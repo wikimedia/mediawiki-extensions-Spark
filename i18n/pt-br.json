@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Cainamarques"
-        ]
-    },
-    "spark-missing-query": "Você deve especificar uma consulta utilizando o parâmetro \"data-spark-query\"."
+	"@metadata": {
+		"authors": [
+			"Cainamarques"
+		]
+	},
+	"spark-missing-query": "Você deve especificar uma consulta utilizando o parâmetro \"data-spark-query\"."
 }

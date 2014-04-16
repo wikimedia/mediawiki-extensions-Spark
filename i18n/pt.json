@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Hamilton Abreu"
-        ]
-    },
-    "spark-desc": "Acrescenta o elemento <code><nowiki><spark /></nowiki></code> que permite incorporar mash-ups [http://km.aifb.kit.edu/sites/spark/ Spark]. A biblioteca spark foi criada por Denny Vrandecic e Andreas Harth.",
-    "spark-missing-query": "Tem de especificar uma consulta usando o parâmetro \"data-spark-query\"."
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"spark-desc": "Acrescenta o elemento <code><nowiki><spark /></nowiki></code> que permite incorporar mash-ups [http://km.aifb.kit.edu/sites/spark/ Spark]. A biblioteca spark foi criada por Denny Vrandecic e Andreas Harth.",
+	"spark-missing-query": "Tem de especificar uma consulta usando o parâmetro \"data-spark-query\"."
 }
