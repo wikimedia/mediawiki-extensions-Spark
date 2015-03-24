@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Jeroen De Dauw",
-			"Shirayuki"
+			"Shirayuki",
+			"Umherirrender"
 		]
 	},
-	"spark-desc": "{{desc|name=Spark|url=http://www.mediawiki.org/wiki/Extension:Spark}}",
+	"spark-desc": "{{desc|name=Spark|url=https://www.mediawiki.org/wiki/Extension:Spark}}",
 	"spark-missing-query": "Used when a query is not specified."
 }
