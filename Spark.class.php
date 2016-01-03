@@ -121,7 +121,7 @@ final class SparkTag {
 			}
 		}
 		else {
-			return Html::element( 'i', array(), wfMsg( 'spark-missing-query' ) );
+			return Html::element( 'i', array(), wfMessage( 'spark-missing-query' )->text() );
 		}
 	}
 
