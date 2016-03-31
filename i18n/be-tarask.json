@@ -4,5 +4,6 @@
 			"Red Winged Duck"
 		]
 	},
-	"spark-desc": "Дадае тэг <code><nowiki><spark /></nowiki></code>, які дазваляе ўбудоўваць мэшап [http://km.aifb.kit.edu/sites/spark/ Spark]. Бібліятэка spark была створаная Дэні Ўрандэчычам і Андрэасам Гартам."
+	"spark-desc": "Дадае тэг <code><nowiki><spark /></nowiki></code>, які дазваляе ўбудоўваць мэшап [http://km.aifb.kit.edu/sites/spark/ Spark]. Бібліятэка spark была створаная Дэні Ўрандэчычам і Андрэасам Гартам.",
+	"spark-missing-query": "Вам трэба вызначыць запыт з дапамогай парамэтру «data-spark-query»."
 }
