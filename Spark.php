@@ -50,21 +50,15 @@ $wgExtensionMessagesFiles['Spark'] = dirname( __FILE__ ) . '/Spark.i18n.php';
 $wgAutoloadClasses['SparkHooks'] = dirname( __FILE__ ) . '/Spark.hooks.php';
 $wgAutoloadClasses['SparkTag'] = dirname( __FILE__ ) . '/Spark.class.php';
 
-if ( version_compare( $wgVersion, '1.17', '<' ) ) {
-	// We do not have resource loader
-	$egSparkScriptJquery = $egSparkScriptPath.'/rdf-spark/lib/jquery-1.4.4.js';
-	$egSparkScriptJquerySpark = $egSparkScriptPath.'/rdf-spark/jquery.spark.js';
-} else {
-	// We have resource loader
-	$wgResourceModules['ext.spark'] = array(
+// We have resource loader
+$wgResourceModules['ext.spark'] = array(
 	'localBasePath' => dirname( __FILE__ ),
 	'remoteBasePath' => $egSparkScriptPath,
 	'styles' => array(),
 	'scripts' => array( 'rdf-spark/jquery.spark.js' ),
 	'dependencies' => array(),
 	'messages' => array()
-	);
-}
+);
 
 
 $wgHooks['ParserFirstCallInit'][] = 'SparkHooks::onParserFirstCallInit';
