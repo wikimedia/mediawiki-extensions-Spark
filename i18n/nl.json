@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand"
+			"Siebrand",
+			"MarcoSwart"
 		]
 	},
-	"spark-desc": "Voegt het label <code><nowiki><spark /></nowiki></code> voor het inbedden van [http://km.aifb.kit.edu/sites/spark/ Spark]-mashups. De sparkbibliotheek gemaakt door Denny Vrandecic en Andreas Harth",
+	"spark-desc": "Voegt het label <code><nowiki><spark /></nowiki></code> voor het inbedden van [http://km.aifb.kit.edu/sites/spark/ Spark]-mashups.",
 	"spark-missing-query": "U moet een zoekopdracht opgeven met de parameter \"data-spark-query\"."
 }
