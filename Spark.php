@@ -45,7 +45,6 @@ $wgExtensionCredits['other'][] = array(
 $egSparkScriptPath = ( (!isset($wgExtensionAssetsPath) || $wgExtensionAssetsPath === false) ? $wgScriptPath . '/extensions' : $wgExtensionAssetsPath ) . '/Spark';
 
 $wgMessagesDirs['Spark'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['Spark'] = dirname( __FILE__ ) . '/Spark.i18n.php';
 
 $wgAutoloadClasses['SparkHooks'] = dirname( __FILE__ ) . '/Spark.hooks.php';
 $wgAutoloadClasses['SparkTag'] = dirname( __FILE__ ) . '/Spark.class.php';
