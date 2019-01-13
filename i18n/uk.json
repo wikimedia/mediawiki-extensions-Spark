@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата"
+			"Ата",
+			"Piramidion"
 		]
 	},
-	"spark-desc": "Додає тег <code><nowiki><spark /></nowiki></code>, який дає можливість вбудовування меш-апів [http://km.aifb.kit.edu/sites/spark/ Spark]. Бібліотеку Spark створили Денні Врандечич (Denny Vrandecic) і Андреас Харт (Andreas Harth).",
+	"spark-desc": "Додає тег <code><nowiki><spark /></nowiki></code>, який дає можливість вбудовування меш-апів [http://km.aifb.kit.edu/sites/spark/ Spark].",
 	"spark-missing-query": "Вам необхідно вказати в запиті параметр \"data-spark-query\"."
 }
