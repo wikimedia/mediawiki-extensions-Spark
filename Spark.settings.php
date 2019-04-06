@@ -2,7 +2,7 @@
 
 /**
  * File defining the settings for the Spark extension.
- * More info can be found at http://www.mediawiki.org/wiki/Extension:Spark#Settings
+ * More info can be found at https://www.mediawiki.org/wiki/Extension:Spark#Settings
  *
  *                          NOTICE:
  * Changing one of these settings can be done by copying or cutting it,

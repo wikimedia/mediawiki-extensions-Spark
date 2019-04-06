@@ -1,6 +1,6 @@
 These is the readme file for the Spark extension.
-	
-Extension page on mediawiki.org: http://www.mediawiki.org/wiki/Extension:Spark
+
+Extension page on mediawiki.org: https://www.mediawiki.org/wiki/Extension:Spark
 Latest version of the readme file: http://svn.wikimedia.org/viewvc/mediawiki/trunk/extensions/Spark/README?view=co
 
 == About ==
@@ -17,17 +17,17 @@ Spark as described on the Spark website:
 	offered on the Web in a way that can be further processed, and more and more
 	sites and applications are using external data. More and more mashups are created,
 	where data from different sources is integrated and displayed with novel visualisations.
-	
+
 	Spark is a library that enables HTML authors to create mashups more easily than
 	ever before. Using standard Web technologies like SPARQL, RDF, HTML5, and JavaScript,
 	Spark can query external knowledge sources (so called triple stores or SPARQL endpoints),
 	and then visualise the results.
-	
+
 	With Spark, website developers can create visually appealing mashups without having to
 	write a single line of JavaScript, but merely using some markup elements describing the
 	source of the data that is to be shown, a query to select the appropriate data, and
 	selecting one from an expandable set of visualisations and their parameters.
-	
+
 More at http://km.aifb.kit.edu/sites/spark/
 
 This MediaWiki extension, unsurprisingly titled Spark, adds a <code><nowiki><spark></nowiki></code> tag to MediaWiki
@@ -46,5 +46,5 @@ in web pages, and the <code><nowiki><spark></nowiki></code> tag in MediaWiki.
 * Those can be defined in modules, see Spark.settings.php - Example configuration modules
 
 ==== Support for MW versions without Resource Loader ====
-* Here, the native Spark syntax cannot be used, completely. 
+* Here, the native Spark syntax cannot be used, completely.
 * E.g, instead of data-spark-endpoint, one needs to have only endpoint.

@@ -2,8 +2,8 @@
 /**
  * Initialization file for the Spark extension.
  *
- * Documentation:	 		http://www.mediawiki.org/wiki/Extension:Spark
- * Support					http://www.mediawiki.org/wiki/Extension_talk:Spark
+ * Documentation:	 		https://www.mediawiki.org/wiki/Extension:Spark
+ * Support					https://www.mediawiki.org/wiki/Extension_talk:Spark
  * Source code:			 	http://svn.wikimedia.org/viewvc/mediawiki/trunk/extensions/Spark
  *
  * @file Spark.php
@@ -35,7 +35,7 @@ $wgExtensionCredits['other'][] = array(
 	'name' => 'Spark',
 	'version' => Spark_VERSION,
 	'author' => array(
-		'[http://www.mediawiki.org/wiki/User:Jeroen_De_Dauw Jeroen De Dauw]',
+		'[https://www.mediawiki.org/wiki/User:Jeroen_De_Dauw Jeroen De Dauw]',
 ),
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Spark',
 	'descriptionmsg' => 'spark-desc'
