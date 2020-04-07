@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Otokoume",
 			"Schu",
-			"Shirayuki",
-			"Otokoume"
+			"Shirayuki"
 		]
 	},
 	"spark-desc": "[http://km.aifb.kit.edu/sites/spark/ Spark] マッシュアップを埋め込めるようにする <code><nowiki><spark /></nowiki></code> タグを追加する",

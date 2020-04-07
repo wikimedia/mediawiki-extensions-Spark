@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sherbrooke",
-			"Crochet.david"
+			"Crochet.david",
+			"Sherbrooke"
 		]
 	},
 	"spark-desc": "Ajoute une balise <code><nowiki><spark /></nowiki></code> qui permet d’inclure une mosaïque de données [http://km.aifb.kit.edu/sites/spark/ Spark] (''mashup'').",

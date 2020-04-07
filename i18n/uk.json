@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата",
-			"Piramidion"
+			"Piramidion",
+			"Ата"
 		]
 	},
 	"spark-desc": "Додає тег <code><nowiki><spark /></nowiki></code>, який дає можливість вбудовування меш-апів [http://km.aifb.kit.edu/sites/spark/ Spark].",

@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand",
-			"MarcoSwart"
+			"MarcoSwart",
+			"Siebrand"
 		]
 	},
 	"spark-desc": "Voegt het label <code><nowiki><spark /></nowiki></code> voor het inbedden van [http://km.aifb.kit.edu/sites/spark/ Spark]-mashups.",

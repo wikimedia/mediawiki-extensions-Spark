@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Александр Сигачёв",
-			"Okras"
+			"Okras",
+			"Александр Сигачёв"
 		]
 	},
 	"spark-desc": "Добавляет тег <code><nowiki><spark /></nowiki></code>, позволяющий встраивать мэшапы [http://km.aifb.kit.edu/sites/spark/ Spark].",
