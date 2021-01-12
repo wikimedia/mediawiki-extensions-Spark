@@ -14,7 +14,7 @@
  */
 
 /**
- * This documenation group collects source code files belonging to Spark.
+ * This documentation group collects source code files belonging to Spark.
  *
  * @defgroup Spark Spark
  */
