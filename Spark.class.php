@@ -117,7 +117,7 @@ final class SparkTag {
 				$parser->disableCache();
 				return $html;
 			} else {
-				return array( $parser->insertStripItem( $html, $parser->mStripState ), 'noparse' => true, 'isHTML' => true );
+				return array( $parser->insertStripItem( $html ), 'noparse' => true, 'isHTML' => true );
 			}
 		}
 		else {
