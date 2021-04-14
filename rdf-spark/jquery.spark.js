@@ -239,5 +239,5 @@
 		return ( maps.length > 1 ? maps : maps[ 0 ] );
 	};
 
-	$( document ).ready( function () { spark_markup( $( '.spark' ) ); } );
+	$( function () { spark_markup( $( '.spark' ) ); } );
 }( jQuery ) );
