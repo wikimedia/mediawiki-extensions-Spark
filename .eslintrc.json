@@ -13,7 +13,6 @@
 		"no-unused-vars": "warn",
 		"no-undef": "warn",
 		"no-implicit-globals": "warn",
-		"one-var": "warn",
 		"eqeqeq": "warn",
 		"camelcase": "warn",
 		"no-useless-escape": "warn",
