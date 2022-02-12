@@ -59,7 +59,7 @@ final class SparkHooks {
 			// We have resource loader
 			// If we have resource loader
 			if ( !$loadedJs ) {
-				$parser->getOutput()->addModules( 'ext.spark' );
+				$parser->getOutput()->addModules( [ 'ext.spark' ] );
 				$loadedJs = true;
 			}
 		}

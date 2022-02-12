@@ -100,7 +100,7 @@ final class SparkTag {
 					// $wgResourceModules might not exist
 					if (isset($wgResourceModules) && array_key_exists($module, $wgResourceModules)) {
 						// TODO: Do we need to check, whether module has been added already?
-						$parser->getOutput()->addModules( $module );
+						$parser->getOutput()->addModules( [ $module ] );
 					}
 				}
 			}
