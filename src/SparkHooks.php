@@ -5,10 +5,10 @@
  *
  * @since 0.1
  *
- * @file Spark.hooks.php
+ * @file SparkHooks.php
  * @ingroup Spark
  *
- * @licence GNU GPL v3+
+ * @license GPL-3.0-or-later
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
 final class SparkHooks {
@@ -18,13 +18,10 @@ final class SparkHooks {
 	 *
 	 * @since 0.1
 	 *
-	 * @param Parser $parser
-	 *
-	 * @return true
+	 * @param Parser &$parser
 	 */
 	public static function onParserFirstCallInit( Parser &$parser ) {
 		$parser->setHook( 'spark', __CLASS__ . '::onSparkRender' );
-		return true;
 	}
 
 	/**
@@ -33,9 +30,10 @@ final class SparkHooks {
 	 * @param mixed $input
 	 * @param array $args
 	 * @param Parser $parser
-	 * @param PPFrame $frame
+	 * @param PPFrame|null $frame
+	 * @return array|string
 	 */
-	public static function onSparkRender( $input, array $args, Parser $parser, $frame = null) {
+	public static function onSparkRender( $input, array $args, Parser $parser, $frame = null ) {
 		global $wgVersion;
 		global $wgOut;
 		global $egSparkScriptJquery;
@@ -46,12 +44,12 @@ final class SparkHooks {
 		if ( version_compare( $wgVersion, '1.17', '<' ) ) {
 			// We do not have resource loader
 			if ( !$loadedJs ) {
-				$wgOut->addScript('<script src="'.$egSparkScriptJquery.'" type="text/javascript"></script>');
-				wfDebugLog( 'spark', "AddScript:".' <script src="'.$egSparkScriptJquery.'" type="text/javascript"></script>' );
-				//echo "AddScript:".' <script src="'.$egSparkScriptJquery.'" type="text/javascript"></script>';
-				$wgOut->addScript('<script src="'.$egSparkScriptJquerySpark.'" type="text/javascript"></script>');
-				wfDebugLog( 'spark', "AddScript:".' <script src="'.$egSparkScriptJquerySpark.'" type="text/javascript"></script>' );
-				//echo "AddScript:".' <script src="'.$egSparkScriptJquerySpark.'" type="text/javascript"></script>';
+				$wgOut->addScript( '<script src="' . $egSparkScriptJquery . '" type="text/javascript"></script>' );
+				wfDebugLog( 'spark', "AddScript:" . ' <script src="' . $egSparkScriptJquery . '" type="text/javascript"></script>' );
+				// echo "AddScript:".' <script src="'.$egSparkScriptJquery.'" type="text/javascript"></script>';
+				$wgOut->addScript( '<script src="' . $egSparkScriptJquerySpark . '" type="text/javascript"></script>' );
+				wfDebugLog( 'spark', "AddScript:" . ' <script src="' . $egSparkScriptJquerySpark . '" type="text/javascript"></script>' );
+				// echo "AddScript:".' <script src="'.$egSparkScriptJquerySpark.'" type="text/javascript"></script>';
 				$loadedJs = true;
 			}
 
@@ -67,7 +65,6 @@ final class SparkHooks {
 
 		// PPFrame maybe not existing
 		return $tag->render( $parser, $frame );
-
 	}
 
 }

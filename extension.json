@@ -9,7 +9,7 @@
 	"descriptionmsg": "spark-desc",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": ">= 1.35.0"
 	},
 	"MessagesDirs": {
 		"Spark": [
@@ -17,8 +17,8 @@
 		]
 	},
 	"AutoloadClasses": {
-		"SparkHooks": "Spark.hooks.php",
-		"SparkTag": "Spark.class.php"
+		"SparkHooks": "src/SparkHooks.php",
+		"SparkTag": "src/SparkTag.php"
 	},
 	"ResourceModules": {
 		"ext.spark": {
