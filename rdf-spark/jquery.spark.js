@@ -229,7 +229,7 @@
 			var map = {};
 			for ( var key in this.attributes ) {
 				if ( !isNaN( key ) ) {
-					if ( !prefix || this.attributes[ key ].name.substr( 0, prefix.length ) == prefix ) {
+					if ( !prefix || this.attributes[ key ].name.slice( 0, prefix.length ) == prefix ) {
 						map[ this.attributes[ key ].name ] = this.attributes[ key ].value;
 					}
 				}
