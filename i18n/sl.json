@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"spark-desc": "doda značko <code><nowiki><spark /></nowiki></code>, ki omogoča vdelavo podatkovnega mozaika [http://km.aifb.kit.edu/sites/spark/ Spark]",
+	"spark-missing-query": "S parametrom »data-spark-query« morate določiti poizvedbo."
+}
