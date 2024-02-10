@@ -59,7 +59,9 @@
 			options = { query: query };
 		}
 		var settings = defaults;
-		if ( options ) { $.extend( true, settings, options ); }
+		if ( options ) {
+			$.extend( true, settings, options );
+		}
 
 		var sparqljson = function ( index, element ) {
 			var $this = $( element ),
@@ -72,7 +74,9 @@
 			request.query += settings.query;
 			if ( settings.rdf.length > 0 ) {
 				var froms = '';
-				$.each( settings.rdf.split( /\s+/ ), function ( i, from ) { froms += '\nFROM <' + from + '>'; } );
+				$.each( settings.rdf.split( /\s+/ ), function ( i, from ) {
+					froms += '\nFROM <' + from + '>';
+				} );
 				request.query = request.query.replace( /\sWHERE(\s)*\{/i, froms + '\nWHERE {' );
 			}
 
@@ -108,7 +112,9 @@
 	};
 
 	// spark function for manual calls of Spark in JavaScript
-	$.spark = function ( element, options ) { $( element ).spark( options ); };
+	$.spark = function ( element, options ) {
+		$( element ).spark( options );
+	};
 
 	var defaultparam = function ( params, paramname, value ) {
 		if ( params.param[ paramname ] === undefined ) {
@@ -123,14 +129,20 @@
 	$.spark.format.simple = function ( element, result, reduced, params ) {
 		params = defaultparam( params, 'conjunct', ', ' );
 		params = defaultparam( params, 'lastconjunct', ', ' );
-		params = defaultparam( params, 'wrapresult', function ( i ) { return i; } );
-		params = defaultparam( params, 'wraprow', function ( i ) { return i; } );
+		params = defaultparam( params, 'wrapresult', function ( i ) {
+			return i;
+		} );
+		params = defaultparam( params, 'wraprow', function ( i ) {
+			return i;
+		} );
 
 		var lines = [];
 
 		$.each( reduced, function ( item, values ) {
 			var line = ( values.label === undefined ) ? item : values.label;
-			if ( values.link !== undefined ) { line = '<a href="' + values.link + '">' + line + '</a>'; }
+			if ( values.link !== undefined ) {
+				line = '<a href="' + values.link + '">' + line + '</a>';
+			}
 			lines.push( params.param.wraprow( line ) );
 		} );
 
@@ -146,8 +158,12 @@
 	$.spark.format.ul = function ( element, result, reduced, params ) {
 		params = defaultparam( params, 'conjunct', '' );
 		params = defaultparam( params, 'lastconjunct', '' );
-		params = defaultparam( params, 'wrapresult', function ( i ) { return '<ul>' + i + '</ul>'; } );
-		params = defaultparam( params, 'wraprow', function ( i ) { return '<li>' + i + '</li>'; } );
+		params = defaultparam( params, 'wrapresult', function ( i ) {
+			return '<ul>' + i + '</ul>';
+		} );
+		params = defaultparam( params, 'wraprow', function ( i ) {
+			return '<li>' + i + '</li>';
+		} );
 		$.spark.format.simple( element, result, reduced, params );
 	};
 
@@ -239,5 +255,7 @@
 		return ( maps.length > 1 ? maps : maps[ 0 ] );
 	};
 
-	$( function () { spark_markup( $( '.spark' ) ); } );
+	$( function () {
+		spark_markup( $( '.spark' ) );
+	} );
 }( jQuery ) );
