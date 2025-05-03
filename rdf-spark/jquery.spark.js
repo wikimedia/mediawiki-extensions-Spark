@@ -34,7 +34,7 @@
 ( function ( $ ) {
 	$.fn.spark = function ( options ) {
 
-		var defaults = {
+		const defaults = {
 			endpoint: 'http://qcrumb.com/sparql',
 			format: 'simple',
 			query: '',
@@ -55,26 +55,26 @@
 
 		// if the parameter is just a string, assume it is the query string
 		if ( typeof options === 'string' ) {
-			var query = options;
+			const query = options;
 			options = { query: query };
 		}
-		var settings = defaults;
+		const settings = defaults;
 		if ( options ) {
 			$.extend( true, settings, options );
 		}
 
-		var sparqljson = function ( index, element ) {
-			var $this = $( element ),
+		const sparqljson = function ( index, element ) {
+			const $this = $( element ),
 				request = { accept: 'application/sparql-results+json' };
 
 			request.query = '';
-			$.each( settings.ns, function ( prefix, uri ) {
+			$.each( settings.ns, ( prefix, uri ) => {
 				request.query += 'PREFIX ' + prefix + ': <' + uri + '>\n';
 			} );
 			request.query += settings.query;
 			if ( settings.rdf.length > 0 ) {
-				var froms = '';
-				$.each( settings.rdf.split( /\s+/ ), function ( i, from ) {
+				let froms = '';
+				$.each( settings.rdf.split( /\s+/ ), ( i, from ) => {
 					froms += '\nFROM <' + from + '>';
 				} );
 				request.query = request.query.replace( /\sWHERE(\s)*\{/i, froms + '\nWHERE {' );
@@ -82,7 +82,7 @@
 
 			// TODO what to do if XML is returned instead of JSON?
 			// TODO how to handle failures?
-			$.getJSON( settings.endpoint, request, function ( response ) {
+			$.getJSON( settings.endpoint, request, ( response ) => {
 				format( $this, response, reducer( response ), settings );
 			} );
 
@@ -116,7 +116,7 @@
 		$( element ).spark( options );
 	};
 
-	var defaultparam = function ( params, paramname, value ) {
+	const defaultparam = function ( params, paramname, value ) {
 		if ( params.param[ paramname ] === undefined ) {
 			params.param[ paramname ] = value;
 		}
@@ -129,24 +129,20 @@
 	$.spark.format.simple = function ( element, result, reduced, params ) {
 		params = defaultparam( params, 'conjunct', ', ' );
 		params = defaultparam( params, 'lastconjunct', ', ' );
-		params = defaultparam( params, 'wrapresult', function ( i ) {
-			return i;
-		} );
-		params = defaultparam( params, 'wraprow', function ( i ) {
-			return i;
-		} );
+		params = defaultparam( params, 'wrapresult', ( i ) => i );
+		params = defaultparam( params, 'wraprow', ( i ) => i );
 
-		var lines = [];
+		const lines = [];
 
-		$.each( reduced, function ( item, values ) {
-			var line = ( values.label === undefined ) ? item : values.label;
+		$.each( reduced, ( item, values ) => {
+			let line = ( values.label === undefined ) ? item : values.label;
 			if ( values.link !== undefined ) {
 				line = '<a href="' + values.link + '">' + line + '</a>';
 			}
 			lines.push( params.param.wraprow( line ) );
 		} );
 
-		var html = lines.join( params.param.conjunct );
+		let html = lines.join( params.param.conjunct );
 
 		if ( lines.length !== 0 ) {
 			html += params.param.lastconjunct;
@@ -158,18 +154,14 @@
 	$.spark.format.ul = function ( element, result, reduced, params ) {
 		params = defaultparam( params, 'conjunct', '' );
 		params = defaultparam( params, 'lastconjunct', '' );
-		params = defaultparam( params, 'wrapresult', function ( i ) {
-			return '<ul>' + i + '</ul>';
-		} );
-		params = defaultparam( params, 'wraprow', function ( i ) {
-			return '<li>' + i + '</li>';
-		} );
+		params = defaultparam( params, 'wrapresult', ( i ) => '<ul>' + i + '</ul>' );
+		params = defaultparam( params, 'wraprow', ( i ) => '<li>' + i + '</li>' );
 		$.spark.format.simple( element, result, reduced, params );
 	};
 
 	$.spark.format.count = function ( element, result, reduced, params ) {
-		var count = 0;
-		$.each( reduced, function ( item, values ) {
+		let count = 0;
+		$.each( reduced, ( item, values ) => {
 			count++;
 		} );
 		element.html( count );
@@ -183,18 +175,18 @@
 		if ( result.head.vars.length === 0 ) {
 			return undefined;
 		}
-		var firstvar = result.head.vars[ 0 ];
+		const firstvar = result.head.vars[ 0 ];
 		if ( result.results.bindings.length === 0 ) {
 			return null;
 		}
 
-		var reduced = {};
-		$.each( result.results.bindings, function ( index, val ) {
-			var v = val[ firstvar ].value;
+		const reduced = {};
+		$.each( result.results.bindings, ( index, val ) => {
+			const v = val[ firstvar ].value;
 			if ( !( v in reduced ) ) {
 				reduced[ v ] = {};
 			}
-			$.each( val, function ( variable, binding ) {
+			$.each( val, ( variable, binding ) => {
 				if ( variable == firstvar ) {
 					return true;
 				}
@@ -216,14 +208,14 @@
 	// Param: list of elements to be called on.
 	spark_markup = function ( elements ) {
 		elements.each( function () {
-			var $this = $( this ),
+			const $this = $( this ),
 				// get options
 				// TODO: get options from enclosing elements
 				options = {};
 			options.param = {};
 
-			$.each( $this.mapAttributes( 'data-spark-' ), function ( key, value ) {
-				var path = key.split( '-' ).slice( 2, 4 );
+			$.each( $this.mapAttributes( 'data-spark-' ), ( key, value ) => {
+				const path = key.split( '-' ).slice( 2, 4 );
 				if ( path.length > 1 ) {
 					if ( options[ path[ 0 ] ] === undefined ) {
 						options[ path[ 0 ] ] = {};
@@ -240,10 +232,10 @@
 
 	// mapAttributes, code taken from Michael Riddle, 2010, MIT license
 	$.fn.mapAttributes = function ( prefix ) {
-		var maps = [];
+		const maps = [];
 		$( this ).each( function () {
-			var map = {};
-			for ( var key in this.attributes ) {
+			const map = {};
+			for ( const key in this.attributes ) {
 				if ( !isNaN( key ) ) {
 					if ( !prefix || this.attributes[ key ].name.slice( 0, prefix.length ) == prefix ) {
 						map[ this.attributes[ key ].name ] = this.attributes[ key ].value;
@@ -255,7 +247,7 @@
 		return ( maps.length > 1 ? maps : maps[ 0 ] );
 	};
 
-	$( function () {
+	$( () => {
 		spark_markup( $( '.spark' ) );
 	} );
 }( jQuery ) );
