@@ -33,32 +33,8 @@ final class SparkHooks {
 	 * @return array|string
 	 */
 	public static function onSparkRender( $input, array $args, Parser $parser, $frame = null ) {
-		global $wgOut;
-		global $egSparkScriptJquery;
-		global $egSparkScriptJquerySpark;
+		$parser->getOutput()->addModules( [ 'ext.spark' ] );
 
-		static $loadedJs = false;
-
-		if ( version_compare( MW_VERSION, '1.17', '<' ) ) {
-			// We do not have resource loader
-			if ( !$loadedJs ) {
-				$wgOut->addScript( '<script src="' . $egSparkScriptJquery . '" type="text/javascript"></script>' );
-				wfDebugLog( 'spark', "AddScript:" . ' <script src="' . $egSparkScriptJquery . '" type="text/javascript"></script>' );
-				// echo "AddScript:".' <script src="'.$egSparkScriptJquery.'" type="text/javascript"></script>';
-				$wgOut->addScript( '<script src="' . $egSparkScriptJquerySpark . '" type="text/javascript"></script>' );
-				wfDebugLog( 'spark', "AddScript:" . ' <script src="' . $egSparkScriptJquerySpark . '" type="text/javascript"></script>' );
-				// echo "AddScript:".' <script src="'.$egSparkScriptJquerySpark.'" type="text/javascript"></script>';
-				$loadedJs = true;
-			}
-
-		} else {
-			// We have resource loader
-			// If we have resource loader
-			if ( !$loadedJs ) {
-				$parser->getOutput()->addModules( [ 'ext.spark' ] );
-				$loadedJs = true;
-			}
-		}
 		$tag = new SparkTag( $args, $input );
 
 		// PPFrame maybe not existing

@@ -52,12 +52,7 @@ final class SparkTag {
 	 * @return array|string
 	 */
 	public function render( Parser $parser, $frame ) {
-		global $wgOut;
-		global $egSparkScriptPath;
 		global $wgResourceModules;
-
-		// What is loaded already?
-		static $loadedJsses = [];
 
 		wfDebugLog( 'myextension', 'Parameters alright? ' . print_r( $this->parameters, true ) );
 		if ( array_key_exists( 'data-spark-query', $this->parameters ) ) {
@@ -82,40 +77,13 @@ final class SparkTag {
 				$format = str_replace( [ '.js' ], [ '' ], $format );
 				$module = 'ext.' . $format;
 
-				// for older versions of MW, different
-				if ( version_compare( MW_VERSION, '1.17', '<' ) ) {
-					if ( isset( $wgResourceModules ) && array_key_exists( $module, $wgResourceModules ) ) {
-						// only if not already loaded
-						if ( !isset( $loadedJsses[$module] ) ) {
-							// scripts
-							foreach ( $wgResourceModules[$module]['scripts'] as $script ) {
-								$wgOut->addScript( '<script src="' . $egSparkScriptPath . "/" .
-									$script . '" type="text/javascript"></script>' );
-								wfDebugLog( 'spark', "AddScript:" .
-									' <script src="' . $egSparkScriptPath . "/" . $script .
-									'" type="text/javascript"></script>' );
-							}
-
-							// css
-							foreach ( $wgResourceModules[$module]['styles'] as $style ) {
-								$wgOut->addScript( '<link rel="stylesheet" href="' .
-									$egSparkScriptPath . "/" . $style . '" type="text/css" />' );
-								wfDebugLog( 'spark', "AddLink:" .
-									' <link rel="stylesheet" href="' . $egSparkScriptPath . "/" .
-									$style . '" type="text/css" />' );
-							}
-							$loadedJsses[$module] = true;
-						}
-					}
-				} else {
-					// $wgResourceModules might not exist
-					if ( isset( $wgResourceModules ) && array_key_exists( $module, $wgResourceModules ) ) {
-						// TODO: Do we need to check, whether module has been added already?
-						$parser->getOutput()->addModules( [ $module ] );
-					}
+				// $wgResourceModules might not exist
+				if ( isset( $wgResourceModules ) && array_key_exists( $module, $wgResourceModules ) ) {
+					$parser->getOutput()->addModules( [ $module ] );
 				}
 			}
 
+			// phpcs:ignore Generic.Files.LineLength.TooLong
 			$html = '<div class="spark" data-spark-query="' . $query . '" ' . Html::expandAttributes( $this->parameters ) . ' >' .
 			( $this->contents === null ? '' : htmlspecialchars( $this->contents ) ) .
 					'</div>';
@@ -125,13 +93,7 @@ final class SparkTag {
 			// still make the SPARQL query work
 			$html = preg_replace( '/[ \t]+(\?)/', '$1', $html );
 
-			// for older versions of MW, different
-			if ( version_compare( MW_VERSION, '1.17', '<' ) ) {
-				$parser->disableCache();
-				return $html;
-			} else {
-				return [ $parser->insertStripItem( $html ), 'noparse' => true, 'isHTML' => true ];
-			}
+			return [ $parser->insertStripItem( $html ), 'noparse' => true, 'isHTML' => true ];
 		} else {
 			return Html::element( 'i', [], wfMessage( 'spark-missing-query' )->text() );
 		}
@@ -152,7 +114,7 @@ final class SparkTag {
 		// For lower versions of MW, special chars were not allowed in tags, therefore, we simply
 		// add them, then.
 		foreach ( $args as $name => $value ) {
-			if ( strpos( $name, 'data-spark-' ) === 0 ) {
+			if ( str_starts_with( $name, 'data-spark-' ) ) {
 				$parameters[$name] = $value;
 			} else {
 				$parameters['data-spark-' . $name] = $value;
