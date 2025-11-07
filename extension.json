@@ -31,15 +31,6 @@
 		"localBasePath": "",
 		"remoteExtPath": "Spark"
 	},
-	"config_prefix": "eg",
-	"config": {
-		"SparkQuery": {
-			"value": "data-spark-query"
-		},
-		"SparkFormat": {
-			"value": "data-spark-format"
-		}
-	},
 	"Hooks": {
 		"ParserFirstCallInit": "SparkHooks::onParserFirstCallInit"
 	},

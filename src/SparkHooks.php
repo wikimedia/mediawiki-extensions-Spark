@@ -5,7 +5,6 @@
  *
  * @since 0.1
  *
- * @file SparkHooks.php
  * @ingroup Spark
  *
  * @license GPL-3.0-or-later
@@ -21,7 +20,7 @@ final class SparkHooks {
 	 * @param Parser &$parser
 	 */
 	public static function onParserFirstCallInit( Parser &$parser ) {
-		$parser->setHook( 'spark', __CLASS__ . '::onSparkRender' );
+		$parser->setHook( 'spark', [ __CLASS__, 'onSparkRender' ] );
 	}
 
 	/**
@@ -34,14 +33,13 @@ final class SparkHooks {
 	 * @return array|string
 	 */
 	public static function onSparkRender( $input, array $args, Parser $parser, $frame = null ) {
-		global $wgVersion;
 		global $wgOut;
 		global $egSparkScriptJquery;
 		global $egSparkScriptJquerySpark;
 
 		static $loadedJs = false;
 
-		if ( version_compare( $wgVersion, '1.17', '<' ) ) {
+		if ( version_compare( MW_VERSION, '1.17', '<' ) ) {
 			// We do not have resource loader
 			if ( !$loadedJs ) {
 				$wgOut->addScript( '<script src="' . $egSparkScriptJquery . '" type="text/javascript"></script>' );
