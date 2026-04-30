@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Ykhwong",
-			"아라"
+			"아라",
+			"Tensama0415"
 		]
 	},
 	"spark-desc": "[http://km.aifb.kit.edu/sites/spark/ Spark] 매시업을 넣도록 허용하는 <code><nowiki><spark /></nowiki></code> 태그를 추가합니다.",
-	"spark-missing-query": "\"data-spark-query\" 변수를 사용해서 쿼리를 지정해야 합니다."
+	"spark-missing-query": "\"data-spark-query\" 매개변수를 사용해서 쿼리를 지정해야 합니다."
 }
