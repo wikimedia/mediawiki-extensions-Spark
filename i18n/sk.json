@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"spark-desc": "Pridáva značku <code><nowiki><spark /></nowiki></code>, ktorá umožňuje vkladať mash-upy [http://km.aifb.kit.edu/sites/spark/ Spark]",
+	"spark-missing-query": "Musíte zadať dopyt pomocou parametra „data-spark-query“."
+}
